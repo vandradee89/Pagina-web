@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Unidad Educativa Montepiedra</title>
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+
+<style>
+
+
+body{
+    background-color: #bad1bc;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+.logo-title{
+    display:flex;
+}
+
+.logo-title img{
+    width: 125px;
+    height: 125px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+h1{
+    width: 20;
+    font-size: 40px;
+    line-height: 2.5;
+}
+
+h2{
+    width: 20;
+    font-size: 30px;
+    line-height: 2.5;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: justify;
+}
+
+h4{
+    width: 20;
+    font-size: 20px;
+    line-height: 3.5;
+}
+
+h3{
+    color: #fff;
+    font-size: 16px;
+    font-family:Verdana;
+    float: justify;
+    line-height: 2.5;
+}
+
+.wrp{
+    width:100%;
+    height: 500px;
+    position: relative;
+}
+
+td{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    order: #bad1bc solid;
+    margin: separate 15px;
+    padding: separate 15px;
+    background-color: #bad1bc;
+    border: rgb(8, 97, 25) 5px solid;
+}
+
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
+
+.portada{	
+    width: 100%;
+    height: 100%;
+    background: url(https://scontent.fgye7-1.fna.fbcdn.net/v/t39.30808-6/384437463_788408726627145_4699946877690757077_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=wFoE0xo471YAX92H-Vo&_nc_ht=scontent.fgye7-1.fna&oh=00_AfC8kzPiewqq5fWqUlO1veg8cKGOAE_kB4tNCg4DfWoyOA&oe=653A008A);
+    filter: brightness(50%);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.styled {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgb(156, 209, 156);
+  background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+  box-shadow:
+    inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.styled:hover {
+  background-color: rgb(78, 100, 78);
+}
+
+.styled:active {
+  box-shadow:
+    inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+.contenido{
+    top:0;
+    left:0;
+    position:absolute;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background: rgba(0,0,11,0,6);
+}
+
+.contenido .info{
+    width:100%;
+    max-width:750px;
+    text-align: justify;
+}
+
+.contenido .info h1{
+    color: #fff;
+    max-width: 750px;
+    text-shadow: 0px 1px 10px rgba(0, 0, 0, 0, 4);
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+.contenido .info a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 10px;
+    padding: 10px 25px;
+    color: #fff;
+    background: #2b4a28;
+    border-radius: 50px;
+    margin-bottom: 40px;
+    border:2px solid transparent;
+    transition: all 30ms ease;
+    letter-spacing: 0.5px;
+}
+
+.contenido .info a:hover{
+    background: transparent;
+    border: 2px solid #fff;
+}
+
+.curveado{
+    position: absolute; 
+    width: 100%;
+    bottom: -10px;
+}
+
+.curveado img{
+    width: 100%
+}
+
+@media(max-width:768px){
+    .contenido .info h1{
+        font-size:35px;
+    }
+}
+  p {
+    font-size: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: justify;
+  }
+
+  li {
+    font-size: 20px;
+  }
+
+  img.pequeña{
+  width: 200px;
+  height: 200px;
+}
+
+nav {
+    background-color: #333333;
+    color: white;
+    height: 40px;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: Arial;
+}
+
+nav li {
+    display: inline;
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(63, 90, 60, 0.781);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+</style>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="unidadeducativa.html">Inicio</a></li>
+                <li><a href="programacion.html">Programación</a></li>
+                <li><a href="diseño.html">Diseño Web</a></li>
+                <li><a href="desarrollo.html">Desarrollo Web</a></li>
+                <li><a href="soporte.html">Soporte Técnico</a></li>
+                <li><a href="redes.html">Redes</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="formulario.html">Formulario</a></li>
+            </ul>
+        </nav>
+            <ul>
+                <div class="info">
+                    <img src="https://media.licdn.com/dms/image/C4E16AQHhuDPDNn7pEQ/profile-displaybackgroundimage-shrink_200_800/0/1616261732042?e=2147483647&v=beta&t=AmhDwLAY2JKI6Ab0iYtOLOx0HriF9qTOjg0W6wNNMSU"/ width="100%" height="100%" >   
+            </ul>
+    </div>
+    <header>
+
+    <div class="wrp">
+        <div class="portada"></div>
+        <div class="contenido">
+            <div class="info">
+                <h1>NUESTRO OBJETIVO</h1>
+                <h3>
+                    Estudiar en un colegio técnico tiene muchas ventajas, en esta infografía te comentamos cuáles son:
+                </h3>
+                <h3>
+                    Tendrás mayor tiempo de estudio
+Estarás más tiempo estudiando y aprendiendo cosas nuevas. No sólo en el colegio, también en casa haciendo tarea, que puede ser teórica o práctica. Todo esto te preparará para trabajar y también para la universidad.
+                </h3>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="quienes-somos">
+            <h2>¿Quiénes Somos?</h2>
+            <p>La Unidad Educativa Montepiedra es un centro educativo primario y secundario que ofrece una educación especializada, técnica e integral: humana, científica, cultural, deportiva y espiritual a niños y jóvenes del sector Mapasingue, Prosperina y zonas aledañas.</p> 
+        </section>
+            <section id="quienes-somos">
+            <p>En Montepiedra formamos personas con carácter equilibrado y competencia profesional, que puedan cooperar en la construcción de un mundo más justo. El proyecto educativo Montepiedra está inspirado en los valores cristianos que centran la formación en la persona. Cuenta con tres dimensiones del crecimiento personal de los alumnos, en un clima de libertad y responsabilidad personal:
+            </p>
+        </section>
+
+        <section id="programas">
+            <h2>Programas Educativos</h2>
+            <table class="center">
+                <tr>
+                  <td><img class="pequeña" src="https://concepto.de/wp-content/uploads/2014/08/programacion-2-e1551291144973.jpg"/></td>
+              
+                  <td><img class="pequeña" src="https://blog.landois.com/wp-content/uploads/2018/08/imagen-destacada_diseno-web.jpg"/></td>
+              
+                  <td><img class="pequeña" src="https://tekla.io/wp-content/uploads/2022/03/Recurso1.png"/></td>
+
+                  <td><img class="pequeña" src="https://acerkate.com/wp-content/uploads/2021/05/desarrollo-web-980x737.jpg"/></td>
+
+                  <td><img class="pequeña" src="https://www.teknei.com/wp-content/uploads/2021/12/digital-blue-hud-interface-laptop-concept-1024x589@2x.jpg"/></td>
+                </tr>
+                <tr>
+                  <td><button class="favorite styled" type="button"><a href="programacion.html"><font color="white">Programación</font></a></button></td>
+                  <td><button class="favorite styled" type="button"><a href="diseño.html"><font color="white">Diseño Web</font></a></button></td>
+                  <td><button class="favorite styled" type="button"><a href="desarrollo.html"><font color="white">Desarrollo Web</font></a></button></td>
+                  <td><button class="favorite styled" type="button"><a href="soporte.html"><font color="white">Soporte Técnico</font></a></button></td>
+                  <td><button class="favorite styled" type="button"><a href="redes.html"><font color="white">Redes</font></a></button></td>   
+                </tr>
+            </table>
+            </ul>
+        </section>
+        <section id="admisiones">
+            <h2>Admisiones</h2>
+            <p>Descubre cómo unirte a nuestra comunidad educativa...</p>
+            <td><button class="favorite styled" type="button"><a href="index.html"><font color="white">Ver más</font></a></button></td>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; [2023] Unidad Educativa Montepiedra</p>
+    </footer>
+</body>
+</html>
+

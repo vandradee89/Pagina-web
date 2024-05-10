@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sistemas Operativos y Redes</title>
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+
+<style>
+
+
+body{
+    background-color: #0d2e63;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+.logo-title{
+    display:flex;
+}
+
+.logo-title img{
+    width: 125px;
+    height: 125px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+h1{
+    width: 20;
+    font-size: 40px;
+    line-height: 2.5;
+}
+
+h2{
+    width: 20;
+    font-size: 30px;
+    line-height: 2.5;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: justify;
+}
+
+h4{
+    width: 20;
+    font-size: 20px;
+    line-height: 3.5;
+}
+
+h3{
+    color: #fff;
+    font-size: 16px;
+    font-family:Verdana;
+    float: justify;
+    line-height: 2.5;
+}
+
+.wrp{
+    width:100%;
+    height: 500px;
+    position: relative;
+}
+
+td{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    order: #bad1bc solid;
+    margin: separate 15px;
+    padding: separate 15px;
+    background-color: #bad1bc;
+    border: rgb(8, 97, 25) 5px solid;
+}
+
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
+
+.portada{	
+    width: 100%;
+    height: 100%;
+    background: url(https://www.tecnologias-informacion.com/tipos.jpg);
+    filter: brightness(50%);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.styled {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgb(156, 209, 156);
+  background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+  box-shadow:
+    inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.styled:hover {
+  background-color: rgb(78, 100, 78);
+}
+
+.styled:active {
+  box-shadow:
+    inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+.contenido{
+    top:0;
+    left:0;
+    position:absolute;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background: rgba(0,0,11,0,6);
+}
+
+.contenido .info{
+    width:100%;
+    max-width:750px;
+    text-align: justify;
+}
+
+.contenido .info h1{
+    color: #fff;
+    max-width: 750px;
+    text-shadow: 0px 1px 10px rgba(0, 0, 0, 0, 4);
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+.contenido .info a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 10px;
+    padding: 10px 25px;
+    color: #fff;
+    background: #2b4a28;
+    border-radius: 50px;
+    margin-bottom: 40px;
+    border:2px solid transparent;
+    transition: all 30ms ease;
+    letter-spacing: 0.5px;
+}
+
+.contenido .info a:hover{
+    background: transparent;
+    border: 2px solid #fff;
+}
+
+.curveado{
+    position: absolute; 
+    width: 100%;
+    bottom: -10px;
+}
+
+.curveado img{
+    width: 100%
+}
+
+@media(max-width:768px){
+    .contenido .info h1{
+        font-size:35px;
+    }
+}
+  p {
+    font-size: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: justify;
+  }
+
+  li {
+    font-size: 20px;
+  }
+
+  img.pequeña{
+  width: 175px;
+  height: 175px;
+}
+
+nav {
+    background-color: #333333;
+    color: white;
+    height: 40px;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: Arial;
+}
+
+nav li {
+    display: inline;
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(63, 90, 60, 0.781);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+</style>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="unidadeducativa.html">Inicio</a></li>
+                <li><a href="programacion.html">Programación</a></li>
+                <li><a href="diseño.html">Diseño Web</a></li>
+                <li><a href="desarrollo.html">Desarrollo Web</a></li>
+                <li><a href="soporte.html">Soporte Técnico</a></li>
+                <li><a href="redes.html">Redes</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="formulario.html">Formulario</a></li>
+            </ul>
+        </nav>
+            <ul>
+                <div class="info">
+                    <img src="https://media.licdn.com/dms/image/C4E16AQHhuDPDNn7pEQ/profile-displaybackgroundimage-shrink_200_800/0/1616261732042?e=2147483647&v=beta&t=AmhDwLAY2JKI6Ab0iYtOLOx0HriF9qTOjg0W6wNNMSU"/ width="100%" height="100%" >   
+            </ul>
+    </div>
+    <header>
+
+    <div class="wrp">
+        <div class="portada"></div>
+        <div class="contenido">
+            <div class="info">
+                <h1>SISTEMAS OPERATIVOS Y REDES</h1>
+                <h3>
+                    Las redes son la tecnología que permite que las computadoras se comuniquen entre sí, es decir, que puedan enviar y recibir datos entre ellas. Gracias a las redes existe casi todo lo que conocemos de la tecnología actual como internet, usar las redes sociales, trabajar de manera remota, hacer videoconferencias etc.
+                </h3>
+                <h3>
+                    Sin embargo, muchos de estos dispositivos sufren problemas, y ese es el momento donde se necesita de un soporte técnico que pueda solucionar los inconvenientes que muestran los computadores. ¿Quieres saber qué es un soporte técnico? Entonces, continúa con nosotros.
+                </h3>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="quienes-somos">
+            <h2>¿Qué son los Sistemas Operativos y Redes?</h2>
+            <p> 
+                El término red hace referencia a un conjunto de sistemas informáticos independientes conectados entre sí, de tal forma que posibilitan un intercambio de datos, para lo que es necesario tanto la conexión física como la conexión lógica de los sistemas.
+                 Esta última se establece por medio de unos protocolos de red especiales, como es el caso de TCP (Transmission Control Protocol). 
+                 Dos ordenadores conectados entre sí ya pueden considerarse una red.
+            </p> 
+        </section>
+
+        <section id="quienes-somos"> 
+            <p> 
+                Las redes se configuran con el objetivo de transmitir datos de un sistema a otro o de disponer recursos en común, como servidores, bases de datos o impresoras. 
+                En función del tamaño y del alcance de la red de ordenadores, se puede establecer una diferenciación entre diversas dimensiones de red.
+            </p> 
+        </section>
+            <section id="quienes-somos">
+            <p>
+                Las redes informáticas no son distintas en su lógica de intercambio de los demás procesos de comunicación conocidos: cuentan con un emisor, un receptor y un mensaje, así como un medio a través del cual transmitirlo y una serie de códigos o protocolos para garantizar su comprensión. 
+            </p>
+        </section>
+
+        <section id="quienes-somos">
+            <h2>Tipos de redes informáticas</h2>
+            <p> 
+                Por lo general, las empresas de informática cuentan con soporte técnico a disposición de sus usuarios. La atención se brinda por teléfono, a través de Internet o, en algunos casos, mediante visitas del personal al domicilio del cliente. El soporte técnico puede contribuir a resolver a distancia un error de programación en un software o una instalación defectuosa de un hardware, por citar dos posibilidades.
+            </p> 
+        </section>
+        <section id="quienes-somos">
+            <p> 
+                Es importante destacar que, por lo general, la atención que se brinda a través del soporte técnico no suele incluir la capacitación o la formación del usuario. Esto quiere decir que, si la persona se comunica con el soporte técnico porque no sabe utilizar el servicio, lo más probable es que el empleado que atiende lo derive a otro sector y no lo instruya. Por eso, muchas compañías cuentan con dos áreas diferentes: por un lado el soporte técnico, y por otro el sector de capacitación.
+            </p> 
+        </section>
+
+        <section id="programas">
+            <h2>Tipos de redes según su alcance.</h2>
+            <table class="center">
+                <tr>
+                  <td><img class="pequeña" src="https://concepto.de/wp-content/uploads/2018/10/red-LAN2-e1539806574511.jpg"/></td>
+              
+                  <td><img class="pequeña" src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Red_de_%C3%A1rea_metropolitana.png"/></td>
+              
+                  <td><img class="pequeña" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/LAN_WAN_scheme.svg/350px-LAN_WAN_scheme.svg.png"/></td>
+
+                </tr>
+                <tr>
+                  <td><button class="favorite styled" <font color="white">Red LAN</font></a></button></td>
+                  <td><button class="favorite styled" <font color="white">Red MAN</font></a></button></td>
+                  <td><button class="favorite styled" <font color="white">Red WAN</font></a></button></td>
+                </tr>
+            </table>
+            </ul>
+        </section>
+
+        <section id="programas">
+            <h2>Tipos de redes según su topología.</h2>
+            <table class="center">
+                <tr>
+                  <td><img class="pequeña" src="https://www.gadae.com/blog/wp-content/uploads/redenbus-300x126.jpg"/></td>
+              
+                  <td><img class="pequeña" src="https://www.gadae.com/blog/wp-content/uploads/reddeanillo1-300x170.jpg"/></td>
+              
+                  <td><img class="pequeña" src="https://www.gadae.com/blog/wp-content/uploads/redenestrella-300x170.jpg"/></td>
+
+                  <td><img class="pequeña" src="https://www.gadae.com/blog/wp-content/uploads/redenarbol-300x211.jpg"/></td>
+              
+                  <td><img class="pequeña" src="https://www.gadae.com/blog/wp-content/uploads/redmalla-300x211.jpg"/></td>
+
+                </tr>
+                <tr>
+                  <td><button class="favorite styled" <font color="white">Red de Bus</font></a></button></td>
+                  <td><button class="favorite styled" <font color="white">Red de Anillo</font></a></button></td>
+                  <td><button class="favorite styled" <font color="white">Red de Estrella</font></a></button></td>
+                  <td><button class="favorite styled" <font color="white">Red de Árbol</font></a></button></td>
+                  <td><button class="favorite styled" <font color="white">Red de Malla</font></a></button></td>
+                </tr>
+            </table>
+            </ul>
+        </section>
+
+
+
+    </main>
+    <footer>
+        <p>&copy; [2023] Unidad Educativa Montepiedra</p>
+    </footer>
+</body>
+</html>
